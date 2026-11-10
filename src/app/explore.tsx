@@ -1,6 +1,6 @@
 import { Image } from 'expo-image';
 import { SymbolView } from 'expo-symbols';
-import { Platform, Pressable, ScrollView, StyleSheet } from 'react-native';
+import { Platform, Pressable, ScrollView, StyleSheet, TouchableOpacity } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { ExternalLink } from '@/components/external-link';
@@ -120,6 +120,14 @@ export default function TabTwoScreen() {
           </Collapsible>
         </ThemedView>
         {Platform.OS === 'web' && <WebBadge />}
+
+        <TouchableOpacity style={styles.fab}>
+          <SymbolView
+            tintColor="white"
+            name={{ ios: 'arrow.up.right.square', android: 'link', web: 'add_circle' }}
+            size={28}
+          />
+        </TouchableOpacity>
       </ThemedView>
     </ScrollView>
   );
@@ -176,5 +184,21 @@ const styles = StyleSheet.create({
     width: 100,
     height: 100,
     alignSelf: 'center',
+  },
+  fab: {
+    position: 'absolute',
+    width: 46,
+    height: 46,
+    alignItems: 'center',
+    justifyContent: 'center',
+    right: 20,
+    bottom: 20,
+    backgroundColor: '#0275d8',
+    borderRadius: 30,
+    elevation: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
   },
 });

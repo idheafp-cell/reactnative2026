@@ -35,23 +35,23 @@ export default function HomeScreen() {
         <ThemedView style={styles.heroSection}>
           <AnimatedIcon />
           <ThemedText type="title" style={styles.title}>
-            Welcome to&nbsp;Expo
+            PGPBL {'\n'} React Native 2026
           </ThemedText>
         </ThemedView>
 
         <ThemedText type="code" style={styles.code}>
-          get started
+          Profil
         </ThemedText>
 
         <ThemedView type="backgroundElement" style={styles.stepContainer}>
           <HintRow
-            title="Try editing"
-            hint={<ThemedText type="code">src/app/index.tsx</ThemedText>}
+            title="Nama :"
+            hint={<ThemedText type="code" >Idhea Fasih Pratiwi</ThemedText>}
           />
-          <HintRow title="Dev tools" hint={getDevMenuHint()} />
+          <HintRow title="NIM :" hint={<ThemedText type="code">25/569123/SV/27605</ThemedText>} />
           <HintRow
-            title="Fresh start"
-            hint={<ThemedText type="code">npm run reset-project</ThemedText>}
+            title="Kelas :"
+            hint={<ThemedText type="code">PGPBL A</ThemedText>}
           />
         </ThemedView>
 
@@ -84,6 +84,8 @@ const styles = StyleSheet.create({
   },
   title: {
     textAlign: 'center',
+    fontSize: 32,
+    color: '#1a33a4',
   },
   code: {
     textTransform: 'uppercase',
@@ -94,5 +96,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.four,
     borderRadius: Spacing.four,
+    backgroundColor: '#65b4fd',
   },
 });
