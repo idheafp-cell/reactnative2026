@@ -20,18 +20,18 @@ export default function AppTabs() {
         />
       </NativeTabs.Trigger>
 
-      <NativeTabs.Trigger name="datamahasiswa">
+      <NativeTabs.Trigger name="lokasi">
         <NativeTabs.Trigger.Label>Data Mahasiswa</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/user-solid.png')}
+          src={require('@/assets/images/tabIcons/location-pin-solid.png')}
           renderingMode="template"
         />
       </NativeTabs.Trigger>
 
-      <NativeTabs.Trigger name="tambahdata">
+      <NativeTabs.Trigger name="forminputlocation">
         <NativeTabs.Trigger.Label>Tambah Data</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
-          src={require('@/assets/images/tabIcons/user-plus-solid.png')}
+          src={require('@/assets/images/tabIcons/location-crosshairs-solid.png')}
           renderingMode="template"
         />
       </NativeTabs.Trigger>
